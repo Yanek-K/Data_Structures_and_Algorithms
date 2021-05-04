@@ -1,3 +1,10 @@
+// Time Complexity O(n^2)
+// Space Complexity O(1)
+
+// Time Complexity -- best case O(n)
+
+// Good if algorithm is used to sort data that is streamed into the array
+
 function insertionSort(arr) {
   for (let i = 0; i < arr.length; i++) {
     let val = arr[i];

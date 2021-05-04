@@ -1,3 +1,8 @@
+// Time Complexity O(n^2)
+// Space Complexity O(1)
+
+// Time Complexity -- best case O(n)
+
 // Simple Version of Bubble Sort
 
 function bubbleSort(arr) {

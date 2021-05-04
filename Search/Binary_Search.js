@@ -24,5 +24,5 @@ function binarySearch(arr, val) {
 }
 
 console.log(
-  binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 44, 253, 352, 523], 104)
+  binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 44, 253, 352, 523], 11)
 );

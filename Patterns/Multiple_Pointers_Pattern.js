@@ -20,7 +20,7 @@ function sumZero(arr) {
   }
 }
 
-console.log(sumZero([-10, -8, -4, -2, 1, 3, 8, 11]));
+//console.log(sumZero([-10, -8, -4, -2, 1, 3, 8, 11]));
 
 // Ex.2 Count unique values in an array
 
