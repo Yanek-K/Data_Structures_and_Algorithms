@@ -1,5 +1,8 @@
 // Created in 1948 by Jonathan Van Neuman
 
+// Time Complexity O(n log n) -- ** BEST, AVERAGE, AND WORST ** --
+// Space Complexity O(n)
+
 // Function for Merging Arrays
 
 function merge(arr1, arr2) {
