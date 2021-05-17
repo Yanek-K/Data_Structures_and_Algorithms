@@ -78,9 +78,19 @@ class SinglyLinkedList {
     this.length++;
     return this;
   }
+  get(val) {
+    if (val < 0 || val > this.length) return null;
+    let node = this.head;
+    while (val > 0) {
+      node = node.next;
+      val--;
+    }
+    return node;
+  }
 }
 
 list = new SinglyLinkedList();
 list.push("Hello");
 list.push("Mate");
 list.push("Alright?");
+list.push("end");
