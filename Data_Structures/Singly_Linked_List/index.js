@@ -5,11 +5,18 @@
 // * Connected via nodes with a next pointer
 // * Random access is not allowed
 // * A collection of nodes
+// * Foundation for Stacks and Queues
 
 // ARRAYS
 // * Indexed in order
 // * Insertion and deletion can be expensive
 // * Can quickly be accessed at a specific index
+
+// BIG O of Lists =>
+// • Insertion - O(1)
+// • Removal - O(1) at the beginning / O(n) at the end
+// • Searching - O(n)
+// • Access - O(n)
 
 // ** List Class Begins Here ** //
 // requires a piece of data and a reference to the next node
