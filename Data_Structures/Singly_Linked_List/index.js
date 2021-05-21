@@ -145,3 +145,5 @@ list.push("Hello");
 list.push("Mate");
 list.push("Alright?");
 list.push("end");
+
+console.log(list);
