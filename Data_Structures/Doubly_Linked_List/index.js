@@ -1,6 +1,12 @@
 // Almost identical to a Singly Linked List but every node has a pointer
 // to the previous item
 
+// ** BIG O ** //
+// Insertion O(1)
+// Removal O(1)
+// Searching O(n) -- technically O(n/2)
+// Access O(n)
+
 class Node {
   constructor(val) {
     this.val = val;
