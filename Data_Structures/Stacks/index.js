@@ -2,6 +2,12 @@
 
 // ** LAST IN FIRST OUT ** //
 
+// BIG O OF STACKS //
+// Insertion O(1)
+// Removal O(1)
+// Searching O(N)
+// Access O(n)
+
 //  ** USES ** //
 // Manage function invocations
 // UNDO/REDO
