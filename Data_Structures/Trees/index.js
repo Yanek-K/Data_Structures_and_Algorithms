@@ -1,9 +1,11 @@
 // ** TREES ** //
 
 // BIG O OF TREES //
-// Insertion O()
+// Insertion O(log n)
+//                  - not guaranteed - if root is small and nodes are larger - becomes a linked list
 // Removal O()
-// Searching O()
+// Searching O(log n)
+//                  - not guaranteed - if root is small and nodes are larger - becomes a linked list
 // Access O()
 
 //  ** USES ** //
@@ -48,6 +50,18 @@ class BST {
         }
         current = current.right;
       }
+    }
+  }
+  find(value) {
+    if (!this.root) return false;
+    let current = this.root;
+    while (true) {
+      if (value === current.value) return current;
+      if (value < current.value && current.left !== null) {
+        current = current.left;
+      } else if (value > current.value && current.right !== null) {
+        current = current.right;
+      } else return false;
     }
   }
 }
