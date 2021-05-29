@@ -64,6 +64,19 @@ class BST {
       } else return false;
     }
   }
+  BFS() {
+    let queue = [];
+    let nodes = [];
+    let rootNode = this.root;
+    queue.push(rootNode);
+    while (queue.length) {
+      rootNode = queue.shift();
+      nodes.push(rootNode.value);
+      if (rootNode.left) queue.push(rootNode.left);
+      if (rootNode.right) queue.push(rootNode.right);
+    }
+    return nodes;
+  }
 }
 
 var tree = new BST();
