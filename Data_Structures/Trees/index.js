@@ -78,6 +78,7 @@ class BST {
     return nodes;
   }
   DFSPreOrder() {
+    // Visit node, then explore entire left side and then the right side
     let data = [];
     function traverse(node) {
       data.push(node.value);
@@ -88,11 +89,23 @@ class BST {
     return data;
   }
   DFSPostOrder() {
+    // Traverse entire branch - left and right - then visit the node
     let data = [];
     function traverse(node) {
       if (node.left) traverse(node.left);
       if (node.right) traverse(node.right);
       data.push(node.value);
+    }
+    traverse(this.root);
+    return data;
+  }
+  DFSInOrder() {
+    // Traverse entire left side, visit the node, then visit the entire right side
+    let data = [];
+    function traverse(node) {
+      if (node.left) traverse(node.left);
+      data.push(node.value);
+      if (node.right) traverse(node.right);
     }
     traverse(this.root);
     return data;
