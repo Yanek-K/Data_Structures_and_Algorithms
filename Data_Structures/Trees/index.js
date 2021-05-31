@@ -2,10 +2,10 @@
 
 // BIG O OF TREES //
 // Insertion O(log n)
-//                  - not guaranteed - if root is small and nodes are larger - becomes a linked list
+// - not guaranteed - if root is small and nodes are larger - becomes a linked list
 // Removal O()
 // Searching O(log n)
-//                  - not guaranteed - if root is small and nodes are larger - becomes a linked list
+// - not guaranteed - if root is small and nodes are larger - becomes a linked list
 // Access O()
 
 //  ** USES ** //
@@ -15,6 +15,13 @@
 // Artificial Intelligence
 // Folders in Operating Systems
 // JSON
+
+// BFS or DFS ? Which is better 
+// Time complexity is the same
+// Space complexity, wide - DFS is better, deep - BFS is better
+
+// Reasons for different DFS methods
+// 
 
 class Node {
   constructor(value) {
